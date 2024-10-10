@@ -1,0 +1,8 @@
+[Unit]
+Description=ChangeMac
+After=network.target
+[Service]
+Type=oneshot
+ExecStart=ABS_PATH
+[Install]
+WantedBy=multi-user.target
