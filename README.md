@@ -9,8 +9,11 @@ address.
 
 ## Install 
 
+```
 sudo apt install macchanger net-tools
+cd /path/to/macacetamol
 sudo cp changemac.service /etc/systemd/system/
 sudo sed -E "s|ABS_PATH|$(pwd)/change_mac|g" /etc/systemd/system/changemac.service
 sudo systemctl enable changemac
 sudo systemctl start changemac
+```
