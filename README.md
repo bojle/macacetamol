@@ -10,7 +10,7 @@ address.
 ## Install 
 
 ```
-sudo apt install macchanger net-tools
+sudo apt install macchanger net-tools isc-dhcp-client
 cd /path/to/macacetamol
 sudo cp changemac.service /etc/systemd/system/
 sudo sed -i -E "s|ABS_PATH|$(pwd)/change_mac|g" /etc/systemd/system/changemac.service
